@@ -1,0 +1,62 @@
+{
+  "model_dir": "/var/tmp/lize_cosyvoice_experiments/route_b_r64_train100_scratch_20260916_131823",
+  "data_cache": "/home/lize/CosyVoiceDreamON/data/route_b/train100_devall_tokens.json",
+  "dreamon_model_dir": "/home/lize/CosyVoiceDreamON/DreamOn-v0-7B",
+  "cosyvoice_model_dir": "/home/lize/CosyVoiceDreamON/CosyVoice2-0.5B",
+  "epochs": 20,
+  "max_steps": 0,
+  "eval_interval": 2000,
+  "probe_max_steps": 800,
+  "lora_rank": 64,
+  "lora_alpha": 128.0,
+  "lora_lr": 0.0001,
+  "projection_lr": 0.0001,
+  "max_sequence_tokens": 2048,
+  "seed": 1986,
+  "world_size": 4,
+  "gpu_ids": "0,1,2,3",
+  "trainable_parameters": {
+    "backbone": 40370176,
+    "speech_embedding": 0,
+    "speech_decoder": 0,
+    "task_embedding": 0,
+    "speech_in_proj": 3211264,
+    "speech_out_proj": 3211264,
+    "edit_head": 17923
+  },
+  "total_trainable_parameters": 46810627,
+  "train_samples": 33225,
+  "dev_samples": 10340,
+  "steps_per_epoch": 8307,
+  "batch_size_per_gpu": 1,
+  "effective_batch_size": 4,
+  "accum_grad": 1,
+  "duration_predictor": false,
+  "initialization": "original_pretrained_DreamOn_CosyVoice_fresh_LoRA_projections_edit_head",
+  "checkpoint_scope": "full_DreamOn_backbone_LoRA_projections_edit_head; original_frozen_CosyVoice_required",
+  "objective": "per_utterance_joint_action_and_conditional_speech_NLL",
+  "speech_conditioning": "target_text_only",
+  "early_stopping": false,
+  "checkpoint_schedule": "step100_step1000_and_every_completed_epoch; no deletions",
+  "validation": "fixed80_edit_full/edit_half/noedit_full; full_dev_edit_full_at_epoch_end",
+  "cache_sha256": "b9c6f997a72a5c223c7c52b29b0f17958399c8e91161e439d60697ef645d6c86",
+  "source_data": {
+    "train": {
+      "usable": 33225,
+      "dropped": 11,
+      "speakers": 247,
+      "source_list": "/home/lize/AudioData/libritts/prepared/lists/train_100.data.list",
+      "list_sha256": "358adc87df0ba529accd28a66dd424331ae5c330f667c234d913624864003bb1",
+      "unconditioned": 1
+    },
+    "dev": {
+      "usable": 10340,
+      "dropped": 9,
+      "speakers": 73,
+      "source_list": "/home/lize/AudioData/libritts/prepared/lists/dev_all.data.list",
+      "list_sha256": "9e3407ebbfda76670a30517a5b864079d023318bffd78aa77a6b5e0ebb85843c",
+      "unconditioned": 0
+    }
+  },
+  "implementation_revision": "b0.1"
+}

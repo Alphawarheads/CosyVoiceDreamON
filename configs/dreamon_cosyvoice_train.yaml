@@ -1,0 +1,67 @@
+# HyperPyYAML training configuration for cosyvoice/bin/train.py.
+# Launch from the repository root; see examples/dreamon/README.md.
+model_family: dreamon_speech_adapter
+dreamon_model_dir: ./DreamOn-v0-7B
+cosyvoice_model_dir: ./CosyVoice2-0.5B
+max_sequence_tokens: 2048
+batch_size: 1
+seed: 1986
+# true: train only the two projections; false: also train the entire DreamOn backbone.
+freeze_dreamon: true
+dreamon_lr: 0.00001
+# LoRA is enabled explicitly with --use_lora true; base weights stay frozen.
+use_lora: false
+lora_rank: 16
+lora_alpha: 32.0
+lora_dropout: 0.05
+lora_target_modules: [q_proj, k_proj, v_proj, o_proj]
+lora_lr: 0.0001
+
+llm: !apply:cosyvoice.llm.dreamon_training.build_training_model
+    dreamon_model_dir: !ref <dreamon_model_dir>
+    cosyvoice_model_dir: !ref <cosyvoice_model_dir>
+    dtype: bf16
+    gradient_checkpointing: true
+    max_sequence_tokens: !ref <max_sequence_tokens>
+    seed: !ref <seed>
+    freeze_dreamon: !ref <freeze_dreamon>
+    dreamon_lr: !ref <dreamon_lr>
+    use_lora: !ref <use_lora>
+    lora_rank: !ref <lora_rank>
+    lora_alpha: !ref <lora_alpha>
+    lora_dropout: !ref <lora_dropout>
+    lora_target_modules: !ref <lora_target_modules>
+    lora_lr: !ref <lora_lr>
+    mask_min: 0.1
+    mask_max: 1.0
+    full_mask_probability: 0.25
+    prompt_probability: 0.5
+    max_prompt_fraction: 0.3
+    validation_mask_ratio: 0.5
+flow: null
+hift: null
+hifigan: null
+
+read_samples: !name:cosyvoice.dataset.dreamon_processor.read_token_samples
+get_tokenizer: !name:cosyvoice.dataset.dreamon_processor.load_dreamon_tokenizer
+    model_dir: !ref <dreamon_model_dir>
+make_batches: !name:cosyvoice.dataset.dreamon_processor.make_token_batches
+    get_tokenizer: !ref <get_tokenizer>
+    batch_size: !ref <batch_size>
+    max_sequence_tokens: !ref <max_sequence_tokens>
+    shuffle_buffer_size: 64
+    speech_vocab_size: 6561
+data_pipeline: [!ref <read_samples>, !ref <make_batches>]
+
+train_conf:
+    optim: adamw
+    optim_conf:
+        lr: 0.0001
+        weight_decay: 0.01
+    scheduler: constantlr
+    scheduler_conf: {}
+    max_epoch: 10
+    grad_clip: 1.0
+    accum_grad: 1
+    log_interval: 10
+    save_per_step: -1

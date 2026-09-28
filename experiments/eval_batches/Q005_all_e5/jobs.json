@@ -1,0 +1,36 @@
+[
+  {
+    "name": "E002_epoch5",
+    "args": [
+      "--meta",
+      "/home/lize/CosyVoiceDreamON/experiments/protocols/P01_dev20_n64_t08/eval.meta.lst",
+      "--backend",
+      "dreamon",
+      "--adapter-checkpoint",
+      "/home/lize/CosyVoiceDreamON/exp/route_b_r16_all_resume_20260915_213200/epoch_5_whole.pt",
+      "--length-mode",
+      "dynamic",
+      "--initial-masks",
+      "64",
+      "--max-speech-tokens",
+      "750",
+      "--max-edit-steps",
+      "2048",
+      "--temperature",
+      "0.8",
+      "--action-temperature",
+      "0.8",
+      "--seed",
+      "1986",
+      "--limit",
+      "20",
+      "--output-dir",
+      "/home/lize/CosyVoiceDreamON/experiments/E002_Bv1_r16_trAll_s1986/eval/epoch_005_step_532002/P01_dev20_n64_t08"
+    ],
+    "limit": 20,
+    "initial_masks": 64,
+    "output": "/home/lize/CosyVoiceDreamON/experiments/E002_Bv1_r16_trAll_s1986/eval/epoch_005_step_532002/P01_dev20_n64_t08",
+    "pid": 2450836,
+    "gpu": 0
+  }
+]

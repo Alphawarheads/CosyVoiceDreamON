@@ -1,0 +1,15 @@
+{
+  "id": "P01_dev20_n64_t08",
+  "meta_sha256": "8a57d33e42749b23c74cae3a9e1160ab6ee3cd94b70854c88a00ce7140888340",
+  "sentences": 20,
+  "length_mode": "dynamic",
+  "initial_masks": 64,
+  "temperature": 0.8,
+  "action_temperature": 0.8,
+  "seed": 1986,
+  "max_speech_tokens": 750,
+  "max_edit_steps": 2048,
+  "asr": "Whisper small.en CPU",
+  "normalization": "EnglishTextNormalizer",
+  "failure_policy": "missing generation counts as deletions"
+}

@@ -1,0 +1,29 @@
+# Paths are relative to the repository root, also when launched from another cwd.
+# Run: python dreamon_cosyvoice_test.py --check-only
+# Run: python dreamon_cosyvoice_test.py
+# Runtime target for this experiment: torch/torchaudio 2.5.1,
+# transformers 4.51.3, plus the existing CosyVoice dependencies and Matcha-TTS.
+# The original requirements.txt pins torch 2.3.1; do not downgrade this experiment.
+dreamon_model_dir: ./DreamOn-v0-7B
+cosyvoice_model_dir: ./CosyVoice2-0.5B
+output_dir: ./outputs/dreamon_cosyvoice
+adapter_checkpoint: null  # e.g. ./exp/dreamon_speech/epoch_0_whole.pt
+
+text: "收到好友从远方寄来的生日礼物，我感到十分开心。"
+prompt_text: "希望你以后能够做的比我还好呦。"
+prompt_wav: ./asset/zero_shot_prompt.wav
+
+device: cuda:0
+dtype: bf16
+math_sdpa: false
+seed: 1986
+
+speech_vocab_size: 6561
+cosyvoice_hidden_size: 896
+dreamon_hidden_size: 3584
+max_sequence_tokens: 2048
+initial_speech_tokens: 100  # 25 codec tokens/second, approximately 4 seconds.
+tokens_per_step: 1
+temperature: 0.0
+dynamic_length: false      # Expansion/deletion needs speech-specific training.
+stream: false

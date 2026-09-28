@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Call_epoch5",
+    "args": [
+      "--meta",
+      "/home/lize/CosyVoiceDreamON/experiments/eval_batches/C_all_epoch5_P01/eval.meta.lst",
+      "--backend",
+      "dreamon",
+      "--adapter-checkpoint",
+      "/home/lize/CosyVoiceDreamON/exp/route_c_r16_trainall_20260921/epoch_5_whole.pt",
+      "--length-mode",
+      "dynamic",
+      "--initial-masks",
+      "64",
+      "--max-speech-tokens",
+      "750",
+      "--max-edit-steps",
+      "2048",
+      "--temperature",
+      "0.8",
+      "--action-temperature",
+      "0.8",
+      "--seed",
+      "1986",
+      "--limit",
+      "20",
+      "--output-dir",
+      "/home/lize/CosyVoiceDreamON/experiments/eval_batches/C_all_epoch5_P01/Call_epoch5"
+    ],
+    "limit": 20,
+    "initial_masks": 64,
+    "output": "/home/lize/CosyVoiceDreamON/experiments/eval_batches/C_all_epoch5_P01/Call_epoch5",
+    "pid": 3421058,
+    "gpu": 1
+  }
+]

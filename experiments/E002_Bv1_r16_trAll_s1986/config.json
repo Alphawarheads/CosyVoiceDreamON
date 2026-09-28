@@ -1,0 +1,75 @@
+{
+  "model_dir": "/home/lize/CosyVoiceDreamON/exp/route_b_r16_all_resume_20260915_213200",
+  "data_cache": "/home/lize/CosyVoiceDreamON/data/route_b/trainall_devall_tokens.json",
+  "dreamon_model_dir": "/home/lize/CosyVoiceDreamON/DreamOn-v0-7B",
+  "cosyvoice_model_dir": "/home/lize/CosyVoiceDreamON/CosyVoice2-0.5B",
+  "epochs": 10,
+  "max_steps": 0,
+  "eval_interval": 10000,
+  "probe_max_steps": 800,
+  "lora_rank": 16,
+  "lora_alpha": 32.0,
+  "lora_lr": 0.0001,
+  "projection_lr": 0.0001,
+  "max_sequence_tokens": 2048,
+  "seed": 1986,
+  "resume_checkpoint": "/home/lize/CosyVoiceDreamON/exp/route_b_r16_all_scratch_control_20260915_071236/epoch_0_whole.pt",
+  "resume_optimizer": "/home/lize/CosyVoiceDreamON/exp/route_b_r16_all_scratch_control_20260915_071236/epoch_0_whole_optimizer.pt",
+  "world_size": 4,
+  "gpu_ids": "4,5,6,7",
+  "trainable_parameters": {
+    "backbone": 10092544,
+    "speech_embedding": 0,
+    "speech_decoder": 0,
+    "task_embedding": 0,
+    "speech_in_proj": 3211264,
+    "speech_out_proj": 3211264,
+    "edit_head": 17923
+  },
+  "total_trainable_parameters": 16532995,
+  "train_samples": 354665,
+  "dev_samples": 10340,
+  "steps_per_epoch": 88667,
+  "batch_size_per_gpu": 1,
+  "effective_batch_size": 4,
+  "accum_grad": 1,
+  "duration_predictor": false,
+  "initialization": "resume_full_model_and_AdamW_state_at_epoch_boundary",
+  "initial_step": 88667,
+  "start_epoch": 1,
+  "resume_rng": "reseeded; original RNG state unavailable",
+  "checkpoint_scope": "full_DreamOn_backbone_LoRA_projections_edit_head; original_frozen_CosyVoice_required",
+  "objective": "per_utterance_joint_action_and_conditional_speech_NLL",
+  "speech_conditioning": "target_text_only",
+  "early_stopping": false,
+  "checkpoint_schedule": "every_completed_epoch_full_model_and_optimizer; no deletions",
+  "validation": "fixed80_edit_full/edit_half/noedit_full; full_dev_edit_full_at_epoch_end",
+  "cache_sha256": "8b497882b31639e74fa956184e01c66e5688cfa1e18a47b4ed91d612b8618129",
+  "source_data": {
+    "train": {
+      "usable": 354665,
+      "dropped": 115,
+      "drop_reasons": {
+        "empty_tokens": 115
+      },
+      "speakers": 2310,
+      "source_list": "/home/lize/AudioData/libritts/prepared/lists/train_all.data.list",
+      "list_sha256": "54a0697a63b919942966f21a9b4896fdcebb8cfec5e2e703a505d1b4a4b07081",
+      "subsets": {
+        "train-clean-100": 33225,
+        "train-clean-360": 116460,
+        "train-other-500": 204980
+      },
+      "total_speech_tokens": 50001910
+    },
+    "dev": {
+      "usable": 10340,
+      "dropped": 9,
+      "speakers": 73,
+      "source_list": "/home/lize/AudioData/libritts/prepared/lists/dev_all.data.list",
+      "list_sha256": "9e3407ebbfda76670a30517a5b864079d023318bffd78aa77a6b5e0ebb85843c",
+      "unconditioned": 0
+    }
+  },
+  "implementation_revision": "b0.1"
+}

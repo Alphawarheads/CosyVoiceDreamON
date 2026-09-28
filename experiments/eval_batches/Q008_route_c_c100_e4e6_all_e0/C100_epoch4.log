@@ -1,0 +1,55 @@
+[2026-09-22 00:41:21,341] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+2026-09-22 00:41:28,755 INFO input frame rate=25
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+[0;93m2026-09-22 00:41:30.898924619 [W:onnxruntime:, transformer_memcpy.cc:74 ApplyImpl] 8 Memcpy nodes are added to the graph main_graph for CUDAExecutionProvider. It might have negative impact on performance (including unable to run CUDA graph). Set session_options.log_severity_level=1 to see the detail logs before this message.[m
+[0;93m2026-09-22 00:41:30.902460069 [W:onnxruntime:, session_state.cc:1166 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+[0;93m2026-09-22 00:41:30.902487681 [W:onnxruntime:, session_state.cc:1168 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+Downloading Model to directory: /home/lize/.cache/modelscope/hub/pengzhendong/wetext
+2026-09-22 00:41:31,161 DEBUG Starting new HTTPS connection (1): www.modelscope.cn:443
+2026-09-22 00:41:31,500 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/revisions HTTP/1.1" 200 222
+2026-09-22 00:41:31,605 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/repo/files?Revision=master&Recursive=True HTTP/1.1" 200 None
+Downloading Model to directory: /home/lize/.cache/modelscope/hub/pengzhendong/wetext
+2026-09-22 00:41:31,997 DEBUG Starting new HTTPS connection (1): www.modelscope.cn:443
+2026-09-22 00:41:32,284 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/revisions HTTP/1.1" 200 222
+2026-09-22 00:41:32,387 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/repo/files?Revision=master&Recursive=True HTTP/1.1" 200 None
+2026-09-22 00:41:32,654 INFO use wetext frontend
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 73.13it/s]
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/lize/CosyVoiceDreamON/cosyvoice/cli/model.py:293: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(self.fp16):
+[1/20] 1272_128104_000001_000000: 2.36s audio
+[2/20] 1462_170138_000001_000001: 7.40s audio
+[3/20] 1673_143396_000014_000002: 10.80s audio
+[4/20] 174_168635_000016_000000: 2.16s audio
+[5/20] 1919_142785_000001_000000: 3.20s audio
+[6/20] 1988_147956_000001_000001: 8.72s audio
+[7/20] 1993_147149_000005_000002: 8.96s audio
+[8/20] 2035_147960_000001_000001: 6.00s audio
+[9/20] 2078_142845_000002_000000: 2.56s audio
+[10/20] 2086_149214_000004_000000: 8.96s audio
+[11/20] 2277_149874_000006_000001: 6.12s audio
+[12/20] 2412_153947_000017_000001: 3.76s audio
+[13/20] 2428_83699_000003_000000: 1.96s audio
+[14/20] 251_118436_000002_000000: 1.84s audio
+[15/20] 2803_154320_000001_000002: 7.12s audio
+[16/20] 2902_9006_000000_000000: 2.84s audio
+[17/20] 3000_15664_000002_000001: 7.96s audio
+[18/20] 3081_166546_000028_000002: 3.36s audio
+[19/20] 3170_137482_000003_000002: 12.88s audio
+[20/20] 3536_23268_000006_000000: 7.40s audio
+2026-09-22 00:52:56,837 DEBUG Attempting to acquire lock 137821003588720 on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-22 00:52:56,838 DEBUG Lock 137821003588720 acquired on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-22 00:52:56,838 DEBUG Attempting to release lock 137821003588720 on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-22 00:52:56,838 DEBUG Lock 137821003588720 released on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-22 00:52:56,847 DEBUG Attempting to acquire lock 137821003595152 on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-22 00:52:56,847 DEBUG Lock 137821003595152 acquired on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-22 00:52:56,847 DEBUG Attempting to release lock 137821003595152 on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-22 00:52:56,847 DEBUG Lock 137821003595152 released on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

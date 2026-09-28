@@ -1,0 +1,36 @@
+[
+  {
+    "name": "e2_oracle",
+    "args": [
+      "--meta",
+      "/home/lize/CosyVoiceDreamON/experiments/protocols/P01_dev20_n64_t08/eval.meta.lst",
+      "--backend",
+      "dreamon",
+      "--adapter-checkpoint",
+      "/home/lize/CosyVoiceDreamON/exp/route_b_r16_all_resume_20260915_213200/epoch_2_whole.pt",
+      "--length-mode",
+      "dynamic",
+      "--initial-masks",
+      "64",
+      "--max-speech-tokens",
+      "750",
+      "--max-edit-steps",
+      "2048",
+      "--temperature",
+      "0.8",
+      "--action-temperature",
+      "0.8",
+      "--seed",
+      "1986",
+      "--limit",
+      "20",
+      "--output-dir",
+      "/home/lize/CosyVoiceDreamON/experiments/E006_Bv1_all_e2_oracle_length/eval/e2_oracle/P01_dev20_n64_t08"
+    ],
+    "output": "/home/lize/CosyVoiceDreamON/experiments/E006_Bv1_all_e2_oracle_length/eval/e2_oracle/P01_dev20_n64_t08",
+    "factor": 1.0,
+    "mode": "oracle",
+    "pid": 3070357,
+    "gpu": 4
+  }
+]

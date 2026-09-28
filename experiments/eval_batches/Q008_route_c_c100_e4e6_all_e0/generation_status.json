@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/home/lize/CosyVoiceDreamON/experiments/eval_batches/Q008_route_c_c100_e4e6_all_e0/run_generation.py\", line 40, in <module>\n    shutil.copy2(OUT/(\"metadata_\"+job[\"name\"])/\"manifest.json\",Path(job[\"output\"])/\"manifest.json\")\n  File \"/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/shutil.py\", line 434, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/shutil.py\", line 254, in copyfile\n    with open(src, 'rb') as fsrc:\nFileNotFoundError: [Errno 2] No such file or directory: '/home/lize/CosyVoiceDreamON/experiments/eval_batches/Q008_route_c_c100_e4e6_all_e0/metadata_C100_epoch4/manifest.json'\n"
+}

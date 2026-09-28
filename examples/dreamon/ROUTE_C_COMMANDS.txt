@@ -1,0 +1,54 @@
+# Route C -- reference ICL + FILL/EXPAND/DELETE (fresh training)
+# Run from /home/lize/CosyVoiceDreamON in the cosyvoice_dreamon environment.
+cd /home/lize/CosyVoiceDreamON
+
+# 1. Prepare pairs ONCE. This cache has already been built on the server.
+# The command rejects existing outputs; use a new filename to change pairing settings.
+python tools/prepare_dreamon_route_c.py \
+  --source-cache data/route_b/train100_devall_tokens.json \
+  --output data/route_c/train100_devall_paired.json \
+  --max-reference-tokens 250 --max-sequence-tokens 2048 --seed 1986
+
+# 2. Start a NEW training run. Choose four FREE GPUs before running.
+# 10 complete epochs, NOT one; no automatic early stopping; max-steps=0 means no step cap.
+# This command has NOT been launched as part of implementing C.
+RUN_TAG=route_c_r32_train100_scratch_$(date +%Y%m%d_%H%M%S)
+CUDA_VISIBLE_DEVICES=4,5,6,7 NPROC_PER_NODE=4 \
+bash examples/dreamon/run_route_c.sh \
+  --data-cache data/route_c/train100_devall_paired.json \
+  --model-dir exp/${RUN_TAG} \
+  --epochs 10 --max-steps 0 \
+  --lora-rank 32 --lora-alpha 64 --lora-lr 0.0001 --projection-lr 0.0001 \
+  --max-sequence-tokens 2048 --eval-interval 2000
+
+# 3. Generate from a C checkpoint. If in a new shell, set RUN_TAG to the actual run name.
+# Select an independently free GPU, or run after training finishes.
+EPOCH=9
+GEN_GPU=4
+CUDA_VISIBLE_DEVICES=${GEN_GPU} python dreamon_generate.py \
+  --meta data/eval/dev_clean_20.meta.lst --backend dreamon \
+  --adapter-checkpoint exp/${RUN_TAG}/epoch_${EPOCH}_whole.pt \
+  --length-mode dynamic --initial-masks 64 --max-speech-tokens 750 --max-edit-steps 2048 \
+  --temperature 0.8 --action-temperature 0.8 \
+  --output-dir outputs/${RUN_TAG}_epoch${EPOCH}_n64_t08
+
+# C is detected from checkpoint format_version=7; no extra reference switch is needed.
+# The meta file supplies utt|ref_text|ref_wav|target_text[|target_wav].
+# ref_wav is tokenized by CosyVoice2 and fed into BOTH DreamOn and the Flow backend.
+# target_wav is evaluation-only and is never passed to DreamOn generation.
+# Audio: outputs/${RUN_TAG}_epoch${EPOCH}_n64_t08/wavs/
+
+# 4. External WER, after installing/locating SEED-TTS evaluation dependencies.
+# Replace this placeholder: ../seed-tts-eval is NOT currently present on this server.
+# Activate the ASR evaluation environment if its dependencies are separate.
+SEED_EVAL_DIR=/absolute/path/to/seed-tts-eval
+python dreamon_eval.py \
+  --meta outputs/${RUN_TAG}_epoch${EPOCH}_n64_t08/meta.lst \
+  --wav-dir outputs/${RUN_TAG}_epoch${EPOCH}_n64_t08/wavs \
+  --seed-eval-dir "${SEED_EVAL_DIR}" --metric wer --language en \
+  --output-dir outputs/${RUN_TAG}_epoch${EPOCH}_n64_t08/wer
+
+# Train/dev edit/token metrics are recorded automatically under exp/${RUN_TAG}/.
+# Full backbone + LoRA + projections + edit head checkpoints; optimizer states are separate.
+# C rejects A/B checkpoints: this launcher is a fresh run, not a B resume.
+# Initial 64 MASKs is NOT a duration prediction. Only the target canvas can grow/shrink.

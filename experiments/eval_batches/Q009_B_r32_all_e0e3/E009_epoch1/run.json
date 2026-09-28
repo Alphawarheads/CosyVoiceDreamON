@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "backend": "dreamon",
+  "config": {
+    "dreamon_model_dir": "/home/lize/CosyVoiceDreamON/DreamOn-v0-7B",
+    "cosyvoice_model_dir": "/home/lize/CosyVoiceDreamON/CosyVoice2-0.5B",
+    "output_dir": "/home/lize/CosyVoiceDreamON/experiments/eval_batches/Q009_B_r32_all_e0e3/E009_epoch1",
+    "adapter_checkpoint": "/var/tmp/lize_cosyvoice_experiments/route_b_r32_trainall_8gpu_20260924/epoch_1_whole.pt",
+    "text": "A 'JOLLY' ART CRITIC",
+    "prompt_text": "There is a healthy bank holiday atmosphere about this book which is extremely pleasant.",
+    "prompt_wav": "/home/lize/AudioData/libritts/raw/LibriTTS/dev-clean/1272/128104/1272_128104_000003_000000.wav",
+    "device": "cuda:0",
+    "dtype": "bf16",
+    "math_sdpa": false,
+    "seed": 1986,
+    "speech_vocab_size": 6561,
+    "cosyvoice_hidden_size": 896,
+    "dreamon_hidden_size": 3584,
+    "max_sequence_tokens": 2048,
+    "initial_speech_tokens": 100,
+    "tokens_per_step": 1,
+    "temperature": 0.8,
+    "dynamic_length": true,
+    "stream": false
+  },
+  "expected": 20,
+  "completed": 20,
+  "length_mode": "dynamic",
+  "uses_target_length": false,
+  "text_normalization": "raw_metadata_transcripts",
+  "max_speech_tokens": 750,
+  "adaptation_status": "training_checkpoint",
+  "loaded_finetuned_backbone": true,
+  "lora_config": {
+    "rank": 32,
+    "alpha": 64.0,
+    "dropout": 0.05,
+    "target_modules": [
+      "k_proj",
+      "o_proj",
+      "q_proj",
+      "v_proj"
+    ]
+  },
+  "edit_generation_config": {
+    "initial_masks": 64,
+    "max_steps": 2048,
+    "speech_temperature": 0.8,
+    "action_temperature": 0.8
+  },
+  "speech_conditioning": "text_only",
+  "current_utt": "3536_23268_000006_000000",
+  "attempted": 20
+}

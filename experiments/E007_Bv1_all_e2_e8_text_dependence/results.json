@@ -1,0 +1,2456 @@
+{
+  "status": "complete",
+  "summary": {
+    "e2_mask0.5_correct": {
+      "token_ce": 4.633453814873828,
+      "accuracy": 0.09812819058423142
+    },
+    "e2_mask0.5_mismatched": {
+      "token_ce": 6.562168309584438,
+      "accuracy": 0.06182643221781055
+    },
+    "e2_mask0.5_empty": {
+      "token_ce": 6.460302641766354,
+      "accuracy": 0.05955757231990925
+    },
+    "e2_mask1.0_correct": {
+      "token_ce": 7.439993230677815,
+      "accuracy": 0.013344690516751846
+    },
+    "e2_mask1.0_mismatched": {
+      "token_ce": 8.262971417731958,
+      "accuracy": 0.009653605905735378
+    },
+    "e2_mask1.0_empty": {
+      "token_ce": 8.134581341112561,
+      "accuracy": 0.010221465076660987
+    },
+    "e8_mask0.5_correct": {
+      "token_ce": 4.470327609922828,
+      "accuracy": 0.10550198525241067
+    },
+    "e8_mask0.5_mismatched": {
+      "token_ce": 6.60350457254757,
+      "accuracy": 0.058423142370958595
+    },
+    "e8_mask0.5_empty": {
+      "token_ce": 6.626319729463661,
+      "accuracy": 0.055587067498581964
+    },
+    "e8_mask1.0_correct": {
+      "token_ce": 7.353217155807469,
+      "accuracy": 0.019591141396933562
+    },
+    "e8_mask1.0_mismatched": {
+      "token_ce": 8.440636621287842,
+      "accuracy": 0.010505394662123793
+    },
+    "e8_mask1.0_empty": {
+      "token_ce": 8.290373997685586,
+      "accuracy": 0.009937535491198184
+    }
+  },
+  "rows": [
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 19,
+      "ce_sum": 98.80999755859375,
+      "correct": 3,
+      "fill_probability": 0.42213529348373413
+    },
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 19,
+      "ce_sum": 120.92692565917969,
+      "correct": 2,
+      "fill_probability": 0.05308683216571808
+    },
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 19,
+      "ce_sum": 124.57347869873047,
+      "correct": 1,
+      "fill_probability": 0.7669711709022522
+    },
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 38,
+      "ce_sum": 244.67599487304688,
+      "correct": 1,
+      "fill_probability": 0.35143646597862244
+    },
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 38,
+      "ce_sum": 293.4713439941406,
+      "correct": 1,
+      "fill_probability": 0.009773331694304943
+    },
+    {
+      "epoch": 2,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 38,
+      "ce_sum": 289.65179443359375,
+      "correct": 1,
+      "fill_probability": 0.8155855536460876
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 140,
+      "ce_sum": 666.20703125,
+      "correct": 8,
+      "fill_probability": 0.9790732264518738
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 140,
+      "ce_sum": 885.371337890625,
+      "correct": 12,
+      "fill_probability": 0.3772488236427307
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 140,
+      "ce_sum": 895.8071899414062,
+      "correct": 8,
+      "fill_probability": 0.9828847646713257
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 279,
+      "ce_sum": 2227.9013671875,
+      "correct": 2,
+      "fill_probability": 0.5936534404754639
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 279,
+      "ce_sum": 2302.4375,
+      "correct": 1,
+      "fill_probability": 0.1417650282382965
+    },
+    {
+      "epoch": 2,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 279,
+      "ce_sum": 2339.52490234375,
+      "correct": 2,
+      "fill_probability": 0.8231415748596191
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 177,
+      "ce_sum": 946.6163330078125,
+      "correct": 14,
+      "fill_probability": 0.9825225472450256
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 177,
+      "ce_sum": 1285.4595947265625,
+      "correct": 7,
+      "fill_probability": 0.9867014288902283
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 177,
+      "ce_sum": 1271.2115478515625,
+      "correct": 8,
+      "fill_probability": 0.9880544543266296
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 354,
+      "ce_sum": 2683.0546875,
+      "correct": 4,
+      "fill_probability": 0.2733284831047058
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 354,
+      "ce_sum": 3003.0595703125,
+      "correct": 4,
+      "fill_probability": 0.8556427359580994
+    },
+    {
+      "epoch": 2,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 354,
+      "ce_sum": 2954.37109375,
+      "correct": 3,
+      "fill_probability": 0.8549963235855103
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 37,
+      "ce_sum": 174.36412048339844,
+      "correct": 0,
+      "fill_probability": 0.8902540802955627
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 37,
+      "ce_sum": 211.00247192382812,
+      "correct": 1,
+      "fill_probability": 0.8481431007385254
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 37,
+      "ce_sum": 211.61898803710938,
+      "correct": 2,
+      "fill_probability": 0.8623519539833069
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 74,
+      "ce_sum": 603.818115234375,
+      "correct": 0,
+      "fill_probability": 0.8241510391235352
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 74,
+      "ce_sum": 651.6732177734375,
+      "correct": 2,
+      "fill_probability": 0.8019233345985413
+    },
+    {
+      "epoch": 2,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 74,
+      "ce_sum": 597.4088134765625,
+      "correct": 1,
+      "fill_probability": 0.811062216758728
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 14,
+      "ce_sum": 54.667816162109375,
+      "correct": 2,
+      "fill_probability": 0.7856544256210327
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 14,
+      "ce_sum": 94.35002899169922,
+      "correct": 0,
+      "fill_probability": 0.06249440833926201
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 14,
+      "ce_sum": 89.41361999511719,
+      "correct": 1,
+      "fill_probability": 0.9177649021148682
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 29,
+      "ce_sum": 171.17572021484375,
+      "correct": 0,
+      "fill_probability": 0.6883467435836792
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 29,
+      "ce_sum": 235.57347106933594,
+      "correct": 0,
+      "fill_probability": 0.008184005506336689
+    },
+    {
+      "epoch": 2,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 29,
+      "ce_sum": 234.72076416015625,
+      "correct": 1,
+      "fill_probability": 0.8228545188903809
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 118,
+      "ce_sum": 518.9407348632812,
+      "correct": 11,
+      "fill_probability": 0.9551227688789368
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 118,
+      "ce_sum": 782.5379028320312,
+      "correct": 7,
+      "fill_probability": 0.40382683277130127
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 118,
+      "ce_sum": 798.658203125,
+      "correct": 6,
+      "fill_probability": 0.9846445918083191
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 235,
+      "ce_sum": 1678.038818359375,
+      "correct": 0,
+      "fill_probability": 0.8368453979492188
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 235,
+      "ce_sum": 1853.1846923828125,
+      "correct": 3,
+      "fill_probability": 0.15717080235481262
+    },
+    {
+      "epoch": 2,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 235,
+      "ce_sum": 1894.70849609375,
+      "correct": 0,
+      "fill_probability": 0.8113400340080261
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 168,
+      "ce_sum": 728.70654296875,
+      "correct": 19,
+      "fill_probability": 0.9832136034965515
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 168,
+      "ce_sum": 1012.995361328125,
+      "correct": 10,
+      "fill_probability": 0.9685789942741394
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 168,
+      "ce_sum": 1003.7938842773438,
+      "correct": 11,
+      "fill_probability": 0.990630567073822
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 335,
+      "ce_sum": 2424.361328125,
+      "correct": 6,
+      "fill_probability": 0.7593780159950256
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 335,
+      "ce_sum": 2758.395263671875,
+      "correct": 0,
+      "fill_probability": 0.857622504234314
+    },
+    {
+      "epoch": 2,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 335,
+      "ce_sum": 2743.258056640625,
+      "correct": 1,
+      "fill_probability": 0.8481009006500244
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 104,
+      "ce_sum": 439.73309326171875,
+      "correct": 20,
+      "fill_probability": 0.9772399663925171
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 104,
+      "ce_sum": 695.9447021484375,
+      "correct": 12,
+      "fill_probability": 0.9702485799789429
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 104,
+      "ce_sum": 685.302490234375,
+      "correct": 13,
+      "fill_probability": 0.9691489934921265
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 209,
+      "ce_sum": 1557.09912109375,
+      "correct": 2,
+      "fill_probability": 0.277315616607666
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 209,
+      "ce_sum": 1781.83203125,
+      "correct": 0,
+      "fill_probability": 0.821610152721405
+    },
+    {
+      "epoch": 2,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 209,
+      "ce_sum": 1729.3883056640625,
+      "correct": 0,
+      "fill_probability": 0.8076503872871399
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 14,
+      "ce_sum": 70.26921081542969,
+      "correct": 2,
+      "fill_probability": 0.9401854276657104
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 14,
+      "ce_sum": 88.60643005371094,
+      "correct": 1,
+      "fill_probability": 0.027220066636800766
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 14,
+      "ce_sum": 82.88578033447266,
+      "correct": 1,
+      "fill_probability": 0.9366728067398071
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 27,
+      "ce_sum": 168.7799072265625,
+      "correct": 1,
+      "fill_probability": 0.8463125228881836
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 27,
+      "ce_sum": 215.47264099121094,
+      "correct": 0,
+      "fill_probability": 0.0021963578183203936
+    },
+    {
+      "epoch": 2,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 27,
+      "ce_sum": 195.69671630859375,
+      "correct": 0,
+      "fill_probability": 0.8265562057495117
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 159,
+      "ce_sum": 797.01953125,
+      "correct": 17,
+      "fill_probability": 0.9839280247688293
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 159,
+      "ce_sum": 1159.0872802734375,
+      "correct": 10,
+      "fill_probability": 0.9855191707611084
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 159,
+      "ce_sum": 1101.1341552734375,
+      "correct": 10,
+      "fill_probability": 0.9892635345458984
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 318,
+      "ce_sum": 2467.6318359375,
+      "correct": 0,
+      "fill_probability": 0.29788753390312195
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 318,
+      "ce_sum": 2648.766845703125,
+      "correct": 6,
+      "fill_probability": 0.867821216583252
+    },
+    {
+      "epoch": 2,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 318,
+      "ce_sum": 2603.189453125,
+      "correct": 10,
+      "fill_probability": 0.839874267578125
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 102,
+      "ce_sum": 462.4479064941406,
+      "correct": 6,
+      "fill_probability": 0.9822102785110474
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 102,
+      "ce_sum": 661.7280883789062,
+      "correct": 5,
+      "fill_probability": 0.9784204959869385
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 102,
+      "ce_sum": 668.9520874023438,
+      "correct": 5,
+      "fill_probability": 0.9821484684944153
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 203,
+      "ce_sum": 1483.56591796875,
+      "correct": 4,
+      "fill_probability": 0.3602202832698822
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 203,
+      "ce_sum": 1731.4622802734375,
+      "correct": 4,
+      "fill_probability": 0.799064576625824
+    },
+    {
+      "epoch": 2,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 203,
+      "ce_sum": 1669.6263427734375,
+      "correct": 2,
+      "fill_probability": 0.8072178363800049
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 31,
+      "ce_sum": 156.79600524902344,
+      "correct": 3,
+      "fill_probability": 0.9636133909225464
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 31,
+      "ce_sum": 234.68699645996094,
+      "correct": 0,
+      "fill_probability": 0.9011175036430359
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 31,
+      "ce_sum": 220.92750549316406,
+      "correct": 0,
+      "fill_probability": 0.965423047542572
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 62,
+      "ce_sum": 455.4203186035156,
+      "correct": 1,
+      "fill_probability": 0.25275829434394836
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 62,
+      "ce_sum": 584.317138671875,
+      "correct": 0,
+      "fill_probability": 0.8279544115066528
+    },
+    {
+      "epoch": 2,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 62,
+      "ce_sum": 523.01416015625,
+      "correct": 0,
+      "fill_probability": 0.8130345344543457
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 16,
+      "ce_sum": 84.876220703125,
+      "correct": 0,
+      "fill_probability": 0.5876989364624023
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 16,
+      "ce_sum": 121.77656555175781,
+      "correct": 0,
+      "fill_probability": 0.2772086560726166
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 16,
+      "ce_sum": 119.14069366455078,
+      "correct": 0,
+      "fill_probability": 0.8663763999938965
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 31,
+      "ce_sum": 220.66732788085938,
+      "correct": 1,
+      "fill_probability": 0.16002079844474792
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 31,
+      "ce_sum": 277.7516784667969,
+      "correct": 0,
+      "fill_probability": 0.1419479101896286
+    },
+    {
+      "epoch": 2,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 31,
+      "ce_sum": 258.7763671875,
+      "correct": 0,
+      "fill_probability": 0.8171296119689941
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 19,
+      "ce_sum": 89.29727172851562,
+      "correct": 0,
+      "fill_probability": 0.8347882032394409
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 19,
+      "ce_sum": 136.69012451171875,
+      "correct": 0,
+      "fill_probability": 0.05435055121779442
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 19,
+      "ce_sum": 133.1368408203125,
+      "correct": 0,
+      "fill_probability": 0.8915334343910217
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 38,
+      "ce_sum": 250.5384521484375,
+      "correct": 1,
+      "fill_probability": 0.33590030670166016
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 38,
+      "ce_sum": 303.9097595214844,
+      "correct": 0,
+      "fill_probability": 0.01513004582375288
+    },
+    {
+      "epoch": 2,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 38,
+      "ce_sum": 310.4496765136719,
+      "correct": 0,
+      "fill_probability": 0.8155855536460876
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 125,
+      "ce_sum": 605.138427734375,
+      "correct": 11,
+      "fill_probability": 0.9924023747444153
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 125,
+      "ce_sum": 757.4964599609375,
+      "correct": 9,
+      "fill_probability": 0.9824836850166321
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 125,
+      "ce_sum": 765.5174560546875,
+      "correct": 11,
+      "fill_probability": 0.9878904819488525
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 250,
+      "ce_sum": 1806.335693359375,
+      "correct": 6,
+      "fill_probability": 0.881615936756134
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 250,
+      "ce_sum": 1987.448486328125,
+      "correct": 0,
+      "fill_probability": 0.8145066499710083
+    },
+    {
+      "epoch": 2,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 250,
+      "ce_sum": 2005.317138671875,
+      "correct": 1,
+      "fill_probability": 0.815467119216919
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 22,
+      "ce_sum": 108.21560668945312,
+      "correct": 2,
+      "fill_probability": 0.822141170501709
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 22,
+      "ce_sum": 142.48529052734375,
+      "correct": 3,
+      "fill_probability": 0.06489188224077225
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 22,
+      "ce_sum": 137.9658203125,
+      "correct": 1,
+      "fill_probability": 0.9381687045097351
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 45,
+      "ce_sum": 340.0198669433594,
+      "correct": 0,
+      "fill_probability": 0.6261305809020996
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 45,
+      "ce_sum": 364.0466003417969,
+      "correct": 0,
+      "fill_probability": 0.01737239398062229
+    },
+    {
+      "epoch": 2,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 45,
+      "ce_sum": 371.07208251953125,
+      "correct": 0,
+      "fill_probability": 0.8166764378547668
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 132,
+      "ce_sum": 558.9159545898438,
+      "correct": 14,
+      "fill_probability": 0.9852222204208374
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 132,
+      "ce_sum": 763.794189453125,
+      "correct": 10,
+      "fill_probability": 0.9819675087928772
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 132,
+      "ce_sum": 747.814208984375,
+      "correct": 8,
+      "fill_probability": 0.9815657734870911
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 263,
+      "ce_sum": 1911.985107421875,
+      "correct": 8,
+      "fill_probability": 0.801037609577179
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 263,
+      "ce_sum": 2159.039306640625,
+      "correct": 10,
+      "fill_probability": 0.8221027851104736
+    },
+    {
+      "epoch": 2,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 263,
+      "ce_sum": 2072.7021484375,
+      "correct": 10,
+      "fill_probability": 0.8188703060150146
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 24,
+      "ce_sum": 93.4554214477539,
+      "correct": 4,
+      "fill_probability": 0.8249411582946777
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 24,
+      "ce_sum": 154.48915100097656,
+      "correct": 1,
+      "fill_probability": 0.027592789381742477
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 24,
+      "ce_sum": 146.678466796875,
+      "correct": 0,
+      "fill_probability": 0.8956727981567383
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 47,
+      "ce_sum": 337.3507385253906,
+      "correct": 0,
+      "fill_probability": 0.8632630705833435
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 47,
+      "ce_sum": 379.9459228515625,
+      "correct": 1,
+      "fill_probability": 0.003277619369328022
+    },
+    {
+      "epoch": 2,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 47,
+      "ce_sum": 384.9503479003906,
+      "correct": 3,
+      "fill_probability": 0.8171216249465942
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 240,
+      "ce_sum": 1063.250244140625,
+      "correct": 24,
+      "fill_probability": 0.992316722869873
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 240,
+      "ce_sum": 1549.9716796875,
+      "correct": 13,
+      "fill_probability": 0.9789714813232422
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 240,
+      "ce_sum": 1485.944580078125,
+      "correct": 14,
+      "fill_probability": 0.988568902015686
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 480,
+      "ce_sum": 3654.78466796875,
+      "correct": 7,
+      "fill_probability": 0.5540205240249634
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 480,
+      "ce_sum": 3813.1396484375,
+      "correct": 2,
+      "fill_probability": 0.888890266418457
+    },
+    {
+      "epoch": 2,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 480,
+      "ce_sum": 3777.455322265625,
+      "correct": 1,
+      "fill_probability": 0.8877185583114624
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 102,
+      "ce_sum": 451.0516052246094,
+      "correct": 13,
+      "fill_probability": 0.9787842631340027
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 102,
+      "ce_sum": 709.7021484375,
+      "correct": 6,
+      "fill_probability": 0.9889598488807678
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 102,
+      "ce_sum": 699.0365600585938,
+      "correct": 5,
+      "fill_probability": 0.9907538294792175
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 205,
+      "ce_sum": 1516.451171875,
+      "correct": 3,
+      "fill_probability": 0.197953000664711
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 205,
+      "ce_sum": 1757.2579345703125,
+      "correct": 0,
+      "fill_probability": 0.8074580430984497
+    },
+    {
+      "epoch": 2,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 205,
+      "ce_sum": 1694.7135009765625,
+      "correct": 0,
+      "fill_probability": 0.8075256943702698
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 19,
+      "ce_sum": 97.65033721923828,
+      "correct": 1,
+      "fill_probability": 0.536369264125824
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 19,
+      "ce_sum": 131.8242645263672,
+      "correct": 1,
+      "fill_probability": 0.05067562311887741
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 19,
+      "ce_sum": 124.7187728881836,
+      "correct": 1,
+      "fill_probability": 0.718519389629364
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 38,
+      "ce_sum": 237.31808471679688,
+      "correct": 1,
+      "fill_probability": 0.8091129064559937
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 38,
+      "ce_sum": 299.6811218261719,
+      "correct": 1,
+      "fill_probability": 0.0043373797088861465
+    },
+    {
+      "epoch": 8,
+      "utt": "1272_128104_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 38,
+      "ce_sum": 300.2776184082031,
+      "correct": 0,
+      "fill_probability": 0.8161845207214355
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 140,
+      "ce_sum": 639.0833740234375,
+      "correct": 15,
+      "fill_probability": 0.9956379532814026
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 140,
+      "ce_sum": 908.4478149414062,
+      "correct": 9,
+      "fill_probability": 0.4091457724571228
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 140,
+      "ce_sum": 931.2452392578125,
+      "correct": 5,
+      "fill_probability": 0.9888717532157898
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 279,
+      "ce_sum": 2208.872314453125,
+      "correct": 3,
+      "fill_probability": 0.8827595114707947
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 279,
+      "ce_sum": 2334.4345703125,
+      "correct": 2,
+      "fill_probability": 0.21452394127845764
+    },
+    {
+      "epoch": 8,
+      "utt": "1462_170138_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 279,
+      "ce_sum": 2347.168212890625,
+      "correct": 2,
+      "fill_probability": 0.8049447536468506
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 177,
+      "ce_sum": 920.833251953125,
+      "correct": 13,
+      "fill_probability": 0.9950980544090271
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 177,
+      "ce_sum": 1311.8773193359375,
+      "correct": 6,
+      "fill_probability": 0.9917206764221191
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 177,
+      "ce_sum": 1303.7099609375,
+      "correct": 6,
+      "fill_probability": 0.9906342029571533
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 354,
+      "ce_sum": 2632.031982421875,
+      "correct": 7,
+      "fill_probability": 0.5621620416641235
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 354,
+      "ce_sum": 3124.981201171875,
+      "correct": 3,
+      "fill_probability": 0.844750702381134
+    },
+    {
+      "epoch": 8,
+      "utt": "1673_143396_000014_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 354,
+      "ce_sum": 2983.373779296875,
+      "correct": 3,
+      "fill_probability": 0.8457016348838806
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 37,
+      "ce_sum": 168.41439819335938,
+      "correct": 3,
+      "fill_probability": 0.9563890695571899
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 37,
+      "ce_sum": 224.19192504882812,
+      "correct": 0,
+      "fill_probability": 0.8488686680793762
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 37,
+      "ce_sum": 208.02944946289062,
+      "correct": 1,
+      "fill_probability": 0.9209845662117004
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 74,
+      "ce_sum": 608.1984252929688,
+      "correct": 1,
+      "fill_probability": 0.8273643255233765
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 74,
+      "ce_sum": 684.2337646484375,
+      "correct": 0,
+      "fill_probability": 0.7977606654167175
+    },
+    {
+      "epoch": 8,
+      "utt": "174_168635_000016_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 74,
+      "ce_sum": 615.489013671875,
+      "correct": 3,
+      "fill_probability": 0.7990691065788269
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 14,
+      "ce_sum": 55.91178894042969,
+      "correct": 4,
+      "fill_probability": 0.946643054485321
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 14,
+      "ce_sum": 101.61935424804688,
+      "correct": 0,
+      "fill_probability": 0.04651632532477379
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 14,
+      "ce_sum": 103.90353393554688,
+      "correct": 0,
+      "fill_probability": 0.8886411786079407
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 29,
+      "ce_sum": 165.8115997314453,
+      "correct": 2,
+      "fill_probability": 0.7858169674873352
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 29,
+      "ce_sum": 244.42872619628906,
+      "correct": 1,
+      "fill_probability": 0.004930522292852402
+    },
+    {
+      "epoch": 8,
+      "utt": "1919_142785_000001_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 29,
+      "ce_sum": 248.0250244140625,
+      "correct": 1,
+      "fill_probability": 0.8247613310813904
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 118,
+      "ce_sum": 496.2152099609375,
+      "correct": 11,
+      "fill_probability": 0.9971422553062439
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 118,
+      "ce_sum": 766.0850830078125,
+      "correct": 5,
+      "fill_probability": 0.3801323175430298
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 118,
+      "ce_sum": 807.4514770507812,
+      "correct": 6,
+      "fill_probability": 0.9848440289497375
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 235,
+      "ce_sum": 1681.31005859375,
+      "correct": 2,
+      "fill_probability": 0.8617379665374756
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 235,
+      "ce_sum": 1860.343017578125,
+      "correct": 3,
+      "fill_probability": 0.29820290207862854
+    },
+    {
+      "epoch": 8,
+      "utt": "1988_147956_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 235,
+      "ce_sum": 1937.4024658203125,
+      "correct": 0,
+      "fill_probability": 0.784273087978363
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 168,
+      "ce_sum": 699.8981323242188,
+      "correct": 16,
+      "fill_probability": 0.989199697971344
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 168,
+      "ce_sum": 1079.577392578125,
+      "correct": 10,
+      "fill_probability": 0.9226276874542236
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 168,
+      "ce_sum": 1037.853271484375,
+      "correct": 13,
+      "fill_probability": 0.9939252138137817
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 335,
+      "ce_sum": 2395.42138671875,
+      "correct": 7,
+      "fill_probability": 0.9096453785896301
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 335,
+      "ce_sum": 2747.00146484375,
+      "correct": 1,
+      "fill_probability": 0.8618694543838501
+    },
+    {
+      "epoch": 8,
+      "utt": "1993_147149_000005_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 335,
+      "ce_sum": 2749.15087890625,
+      "correct": 0,
+      "fill_probability": 0.837890625
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 104,
+      "ce_sum": 406.6566162109375,
+      "correct": 16,
+      "fill_probability": 0.986274003982544
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 104,
+      "ce_sum": 679.9189453125,
+      "correct": 13,
+      "fill_probability": 0.9673933386802673
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 104,
+      "ce_sum": 676.59619140625,
+      "correct": 14,
+      "fill_probability": 0.9696230888366699
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 209,
+      "ce_sum": 1518.785400390625,
+      "correct": 1,
+      "fill_probability": 0.7106863856315613
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 209,
+      "ce_sum": 1789.061279296875,
+      "correct": 1,
+      "fill_probability": 0.7869601845741272
+    },
+    {
+      "epoch": 8,
+      "utt": "2035_147960_000001_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 209,
+      "ce_sum": 1734.190673828125,
+      "correct": 0,
+      "fill_probability": 0.7796278595924377
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 14,
+      "ce_sum": 85.15261840820312,
+      "correct": 2,
+      "fill_probability": 0.9515538215637207
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 14,
+      "ce_sum": 87.01978302001953,
+      "correct": 1,
+      "fill_probability": 0.041589438915252686
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 14,
+      "ce_sum": 80.89474487304688,
+      "correct": 1,
+      "fill_probability": 0.9459608793258667
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 27,
+      "ce_sum": 169.3914337158203,
+      "correct": 0,
+      "fill_probability": 0.8481296300888062
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 27,
+      "ce_sum": 243.6578826904297,
+      "correct": 0,
+      "fill_probability": 0.003196300705894828
+    },
+    {
+      "epoch": 8,
+      "utt": "2078_142845_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 27,
+      "ce_sum": 205.50465393066406,
+      "correct": 0,
+      "fill_probability": 0.832013726234436
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 159,
+      "ce_sum": 769.1163940429688,
+      "correct": 12,
+      "fill_probability": 0.9944260120391846
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 159,
+      "ce_sum": 1152.4278564453125,
+      "correct": 11,
+      "fill_probability": 0.9877609610557556
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 159,
+      "ce_sum": 1117.1773681640625,
+      "correct": 9,
+      "fill_probability": 0.9908513426780701
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 318,
+      "ce_sum": 2368.149169921875,
+      "correct": 10,
+      "fill_probability": 0.7305765748023987
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 318,
+      "ce_sum": 2697.914794921875,
+      "correct": 2,
+      "fill_probability": 0.8556236028671265
+    },
+    {
+      "epoch": 8,
+      "utt": "2086_149214_000004_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 318,
+      "ce_sum": 2669.2685546875,
+      "correct": 11,
+      "fill_probability": 0.8270278573036194
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 102,
+      "ce_sum": 447.5671081542969,
+      "correct": 6,
+      "fill_probability": 0.9912131428718567
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 102,
+      "ce_sum": 642.1895141601562,
+      "correct": 4,
+      "fill_probability": 0.9860790967941284
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 102,
+      "ce_sum": 668.0015869140625,
+      "correct": 3,
+      "fill_probability": 0.989042341709137
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 203,
+      "ce_sum": 1446.9920654296875,
+      "correct": 3,
+      "fill_probability": 0.727552592754364
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 203,
+      "ce_sum": 1768.32177734375,
+      "correct": 5,
+      "fill_probability": 0.7847967743873596
+    },
+    {
+      "epoch": 8,
+      "utt": "2277_149874_000006_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 203,
+      "ce_sum": 1689.107177734375,
+      "correct": 3,
+      "fill_probability": 0.7803603410720825
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 31,
+      "ce_sum": 161.32846069335938,
+      "correct": 4,
+      "fill_probability": 0.9956006407737732
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 31,
+      "ce_sum": 230.6757354736328,
+      "correct": 0,
+      "fill_probability": 0.8038724660873413
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 31,
+      "ce_sum": 236.18714904785156,
+      "correct": 0,
+      "fill_probability": 0.9747578501701355
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 62,
+      "ce_sum": 414.2673034667969,
+      "correct": 1,
+      "fill_probability": 0.6870750784873962
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 62,
+      "ce_sum": 602.2664184570312,
+      "correct": 0,
+      "fill_probability": 0.8223554491996765
+    },
+    {
+      "epoch": 8,
+      "utt": "2412_153947_000017_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 62,
+      "ce_sum": 551.2332153320312,
+      "correct": 0,
+      "fill_probability": 0.8010551929473877
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 16,
+      "ce_sum": 81.43861389160156,
+      "correct": 0,
+      "fill_probability": 0.8767580389976501
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 16,
+      "ce_sum": 123.44886016845703,
+      "correct": 1,
+      "fill_probability": 0.3278513550758362
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 16,
+      "ce_sum": 127.95236206054688,
+      "correct": 0,
+      "fill_probability": 0.9487195014953613
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 31,
+      "ce_sum": 223.17405700683594,
+      "correct": 1,
+      "fill_probability": 0.4082980453968048
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 31,
+      "ce_sum": 292.9534912109375,
+      "correct": 0,
+      "fill_probability": 0.3207356035709381
+    },
+    {
+      "epoch": 8,
+      "utt": "2428_83699_000003_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 31,
+      "ce_sum": 267.5628356933594,
+      "correct": 0,
+      "fill_probability": 0.8199091553688049
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 19,
+      "ce_sum": 89.15994262695312,
+      "correct": 0,
+      "fill_probability": 0.9461675882339478
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 19,
+      "ce_sum": 131.79872131347656,
+      "correct": 1,
+      "fill_probability": 0.06261902302503586
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 19,
+      "ce_sum": 153.33409118652344,
+      "correct": 1,
+      "fill_probability": 0.9230557680130005
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 38,
+      "ce_sum": 251.0597686767578,
+      "correct": 2,
+      "fill_probability": 0.7311421632766724
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 38,
+      "ce_sum": 300.4722900390625,
+      "correct": 0,
+      "fill_probability": 0.010864732787013054
+    },
+    {
+      "epoch": 8,
+      "utt": "251_118436_000002_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 38,
+      "ce_sum": 320.13360595703125,
+      "correct": 0,
+      "fill_probability": 0.8161845207214355
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 125,
+      "ce_sum": 587.1221313476562,
+      "correct": 17,
+      "fill_probability": 0.996128261089325
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 125,
+      "ce_sum": 759.2182006835938,
+      "correct": 7,
+      "fill_probability": 0.9856720566749573
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 125,
+      "ce_sum": 788.6072998046875,
+      "correct": 7,
+      "fill_probability": 0.9902975559234619
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 250,
+      "ce_sum": 1891.4661865234375,
+      "correct": 2,
+      "fill_probability": 0.8776095509529114
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 250,
+      "ce_sum": 2055.51171875,
+      "correct": 1,
+      "fill_probability": 0.7936753034591675
+    },
+    {
+      "epoch": 8,
+      "utt": "2803_154320_000001_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 250,
+      "ce_sum": 2064.128173828125,
+      "correct": 1,
+      "fill_probability": 0.788523256778717
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 22,
+      "ce_sum": 95.45207977294922,
+      "correct": 2,
+      "fill_probability": 0.963592529296875
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 22,
+      "ce_sum": 141.69970703125,
+      "correct": 1,
+      "fill_probability": 0.07100257277488708
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 22,
+      "ce_sum": 137.14266967773438,
+      "correct": 1,
+      "fill_probability": 0.9456486701965332
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 45,
+      "ce_sum": 340.06829833984375,
+      "correct": 0,
+      "fill_probability": 0.8705865144729614
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 45,
+      "ce_sum": 366.72515869140625,
+      "correct": 0,
+      "fill_probability": 0.01706140674650669
+    },
+    {
+      "epoch": 8,
+      "utt": "2902_9006_000000_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 45,
+      "ce_sum": 376.625,
+      "correct": 0,
+      "fill_probability": 0.8116867542266846
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 132,
+      "ce_sum": 537.3302612304688,
+      "correct": 19,
+      "fill_probability": 0.9890954494476318
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 132,
+      "ce_sum": 762.6235961914062,
+      "correct": 10,
+      "fill_probability": 0.9768741726875305
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 132,
+      "ce_sum": 776.1010131835938,
+      "correct": 9,
+      "fill_probability": 0.983905017375946
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 263,
+      "ce_sum": 2025.242919921875,
+      "correct": 3,
+      "fill_probability": 0.8823896050453186
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 263,
+      "ce_sum": 2261.7373046875,
+      "correct": 10,
+      "fill_probability": 0.8062159419059753
+    },
+    {
+      "epoch": 8,
+      "utt": "3000_15664_000002_000001",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 263,
+      "ce_sum": 2149.0009765625,
+      "correct": 10,
+      "fill_probability": 0.7962952852249146
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 24,
+      "ce_sum": 96.86967468261719,
+      "correct": 6,
+      "fill_probability": 0.9449529647827148
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 24,
+      "ce_sum": 162.52992248535156,
+      "correct": 3,
+      "fill_probability": 0.06336306035518646
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 24,
+      "ce_sum": 160.65316772460938,
+      "correct": 2,
+      "fill_probability": 0.9434390068054199
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 47,
+      "ce_sum": 336.9396057128906,
+      "correct": 0,
+      "fill_probability": 0.8796515464782715
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 47,
+      "ce_sum": 401.6273498535156,
+      "correct": 3,
+      "fill_probability": 0.0023053253535181284
+    },
+    {
+      "epoch": 8,
+      "utt": "3081_166546_000028_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 47,
+      "ce_sum": 391.07794189453125,
+      "correct": 1,
+      "fill_probability": 0.8103927969932556
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 240,
+      "ce_sum": 1021.8922729492188,
+      "correct": 26,
+      "fill_probability": 0.995854914188385
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 240,
+      "ce_sum": 1539.4365234375,
+      "correct": 14,
+      "fill_probability": 0.979640781879425
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 240,
+      "ce_sum": 1547.6405029296875,
+      "correct": 15,
+      "fill_probability": 0.9928927421569824
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 480,
+      "ce_sum": 3524.93603515625,
+      "correct": 19,
+      "fill_probability": 0.9216300249099731
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 480,
+      "ce_sum": 3832.071533203125,
+      "correct": 3,
+      "fill_probability": 0.8918809294700623
+    },
+    {
+      "epoch": 8,
+      "utt": "3170_137482_000003_000002",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 480,
+      "ce_sum": 3868.76953125,
+      "correct": 0,
+      "fill_probability": 0.8857960104942322
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "correct",
+      "count": 102,
+      "ce_sum": 424.09490966796875,
+      "correct": 13,
+      "fill_probability": 0.9934203624725342
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "mismatched",
+      "count": 102,
+      "ce_sum": 705.3680419921875,
+      "correct": 6,
+      "fill_probability": 0.9866003394126892
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 0.5,
+      "condition": "empty",
+      "count": 102,
+      "ce_sum": 695.0018310546875,
+      "correct": 4,
+      "fill_probability": 0.9907618761062622
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "correct",
+      "count": 205,
+      "ce_sum": 1458.5947265625,
+      "correct": 4,
+      "fill_probability": 0.524243175983429
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "mismatched",
+      "count": 205,
+      "ce_sum": 1820.497314453125,
+      "correct": 1,
+      "fill_probability": 0.7860188484191895
+    },
+    {
+      "epoch": 8,
+      "utt": "3536_23268_000006_000000",
+      "mask_ratio": 1.0,
+      "condition": "empty",
+      "count": 205,
+      "ce_sum": 1731.2078857421875,
+      "correct": 0,
+      "fill_probability": 0.7795138955116272
+    }
+  ],
+  "note": "Oracle fixed-length teacher-forced masked-token diagnostic, not generated WER. Wrong/empty text changes text length and position; not a pure causal ablation."
+}

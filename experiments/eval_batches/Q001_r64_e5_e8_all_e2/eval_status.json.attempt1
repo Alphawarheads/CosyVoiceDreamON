@@ -1,0 +1,4 @@
+{
+  "status": "failed",
+  "error": "Traceback (most recent call last):\n  File \"/home/lize/CosyVoiceDreamON/experiments/eval_batches/Q001_r64_e5_e8_all_e2/supervise.py\", line 17, in <module>\n    result=json.loads((OUT/\"results.json\").read_text())\n  File \"/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/pathlib.py\", line 1134, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n  File \"/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/pathlib.py\", line 1119, in open\n    return self._accessor.open(self, mode, buffering, encoding, errors,\nFileNotFoundError: [Errno 2] No such file or directory: '/home/lize/CosyVoiceDreamON/experiments/eval_batches/Q001_r64_e5_e8_all_e2/results.json'\n"
+}

@@ -1,0 +1,49 @@
+[2026-09-21 02:15:39,428] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Sliding Window Attention is enabled but not implemented for `sdpa`; unexpected results may be encountered.
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/lightning/fabric/__init__.py:41: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+2026-09-21 02:15:46,454 INFO input frame rate=25
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+[0;93m2026-09-21 02:15:48.532990823 [W:onnxruntime:, transformer_memcpy.cc:74 ApplyImpl] 8 Memcpy nodes are added to the graph main_graph for CUDAExecutionProvider. It might have negative impact on performance (including unable to run CUDA graph). Set session_options.log_severity_level=1 to see the detail logs before this message.[m
+[0;93m2026-09-21 02:15:48.537213979 [W:onnxruntime:, session_state.cc:1166 VerifyEachNodeIsAssignedToAnEp] Some nodes were not assigned to the preferred execution providers which may or may not have an negative impact on performance. e.g. ORT explicitly assigns shape related ops to CPU to improve perf.[m
+[0;93m2026-09-21 02:15:48.537250819 [W:onnxruntime:, session_state.cc:1168 VerifyEachNodeIsAssignedToAnEp] Rerunning with verbose output on a non-minimal build will show node assignments.[m
+Downloading Model to directory: /home/lize/.cache/modelscope/hub/pengzhendong/wetext
+2026-09-21 02:15:48,784 DEBUG Starting new HTTPS connection (1): www.modelscope.cn:443
+2026-09-21 02:15:49,090 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/revisions HTTP/1.1" 200 222
+2026-09-21 02:15:49,152 DEBUG https://www.modelscope.cn:443 "GET /api/v1/models/pengzhendong/wetext/repo/files?Revision=master&Recursive=True HTTP/1.1" 403 137
+2026-09-21 02:15:49,153 - modelscope - ERROR - Authentication token does not exist, 
+2026-09-21 02:15:49,153 INFO no frontend is avaliable
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 76.30it/s]
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/lize/CosyVoiceDreamON/experiments/E006_Bv1_all_e2_oracle_length/inference_wrapper.py", line 34, in <module>
+    runpy.run_path(str(ROOT/"dreamon_generate.py"),run_name="__main__")
+  File "/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/runpy.py", line 289, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/runpy.py", line 96, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/lize/CosyVoiceDreamON/dreamon_generate.py", line 271, in <module>
+    raise SystemExit(main())
+  File "/home/lize/CosyVoiceDreamON/dreamon_generate.py", line 262, in main
+    run(args, rows, config, output_dir, report)
+  File "/home/lize/CosyVoiceDreamON/dreamon_generate.py", line 181, in run
+    tokens, generation_report = bridge.generate_dynamic(
+  File "/home/lize/miniconda3/envs/cosyvoice_dreamon/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lize/CosyVoiceDreamON/experiments/E006_Bv1_all_e2_oracle_length/isolated_generate_dynamic.py", line 12, in generate_dynamic
+KeyError: "A 'JOLLY' ART CRITIC"
+2026-09-21 02:16:21,344 DEBUG Attempting to acquire lock 127631858498768 on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-21 02:16:21,345 DEBUG Lock 127631858498768 acquired on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-21 02:16:21,345 DEBUG Attempting to release lock 127631858498768 on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-21 02:16:21,345 DEBUG Lock 127631858498768 released on /home/lize/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2026-09-21 02:16:21,354 DEBUG Attempting to acquire lock 127631858493440 on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-21 02:16:21,354 DEBUG Lock 127631858493440 acquired on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-21 02:16:21,354 DEBUG Attempting to release lock 127631858493440 on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2026-09-21 02:16:21,355 DEBUG Lock 127631858493440 released on /home/lize/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
